@@ -1,0 +1,138 @@
+<DOCTYPE HTML>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<meta charset="utf-8" />
+
+	<title>Projects</title>
+
+</head>
+
+<body>
+
+	
+	
+	
+	<div class="parallax8 animated fadeInUp"><h1 class="centeredtextbig stroke" style="color:white">Projects</h1></div>
+	<div class="projects">
+		<h1 class="header">I've had a lot of projects over the years at ECSU</h1>
+		<h2 class="mediumtext" style="color:#808080">Here you'll find just a few that stuck with me</h2><hr>
+	</div>
+	<a name="Android">
+	<div class="parallax9 animated fadeInDown"><h1 class="centeredtextbig stroke" style="color:white">My Own Android Application</a></h1></div>
+	<div class="projects animated slideInUp">
+		<p>This was one of the more challenging projects I had to complete near the end of my college career. The reasoning for which is that when I first attended Eastern, the first programming course you used to take was a C++ course. It just so happens that a couple semesters after I complete that class - the curriculum changed so that the first programming course you take is now java. That being said, I only had one other class before this one that taught strictly Java, so I struggled throughout the course.</p>
+		<p>The project itself seemingly wasn't too bad - create an application with a list of features the professor had laid out. That was it, the app could be almost anything you wanted as long as it contained those features. So for my project, I decided I wanted to create a simple application that switches between views by using fragments and buttons to show simple programming concepts like loops and output/input in 3 different programming languages.</p>
+		<h4>Here's an image of the application in an emulator<br>You may click on the image to be brought to a small interactive demonstration I put together for it</h4>
+		<a href="android/Homepage.html">
+		<div class="animated rollIn">
+		<img src="android/home.png" alt="homescreen"> </a>
+		</div>
+		
+		<p>For this project, I also had to use custom sounds for each of the button clicks as audio was a feature that was required to be implemented. The sounds are as follows:</p>
+		Double Click&emsp;
+		<audio controls>
+			<source src="sounds/double_click.mp3" type="audio/mpeg">
+		</audio><br>
+		Glass Button&emsp;
+		<audio controls>
+			<source src="sounds/glass_button.mp3" type="audio/mpeg">
+		</audio><br>
+		Stone Button&emsp;
+		<audio controls>
+			<source src="sounds/stone_button.mp3" type="audio/mpeg">
+		</audio>
+		<p>While this project certainly was very challenging for me, I feel I've learned a lot throughout the process of doing it and am glad I did it in the end.</p><hr>
+		<p>if you wish to download the source files, please click <a href="Statement-of-Features.docx" download>this</a> link for the statement of features, <a href="codeTutorial.zip" download>this</a> link for the Zipped Android Studio Project file, and <a href="app-debug.apk" download>this</a> link for the APK.</p><hr>
+	</div>
+	
+	<a name="Sentiment">
+	<div class="parallax10 animated slideInDown"><h1 class="centeredtextbig stroke" style="color:white">Sentiment Analysis on Reddit</h1></div>
+	<div class="projects animated SlideInUp"></a>
+		
+		<p>This project was one of the more enjoyable projects to work on. I attribute this mostly to the fact that we were given a choice of nearly anything we could do our project on as this was a general Senior Research class.</p>
+		<p>On this project, I worked with another classmate on creating a program that would scrape the top 10 posts from the top 5 and bottom 5 subreddits of the top 100 subreddits from <a href="http://redditmetrics.com/top">here</a></p>
+		<p>At the time of doing the project, those subreddits were as follows:</p>
+		<ol style="list-style-type:none">
+			<li>IAMA</li>
+			<li>TodayILearned</li>
+			<li>Funny</li>
+			<li>Science</li>
+			<li>WorldNews</li>
+			<li>OutOfTheLoop</li>
+			<li>Frugal</li>
+			<li>YouShouldKnow</li>
+			<li>Soccer</li>
+			<li>Trump</li>
+			<li>WTF</li>
+		</ol>
+		
+		<p>One thing to note is that we left out some subreddits that we knew were going to be neutral and/or were not imporant to know the sentiment of. This includes subreddits such as Announcements and some NSFW ones.</p>
+		
+			<p>The code is very repetitive so I'll include this snippet and explain how the program works</p>
+			<img src="Photos/sentimentcode.png" alt="Sentiment Analysis Code Snippet">
+		<p>I've left out the Vader Sentiment Analysis code as we've ignored these values for the final results as we (and some other classmates) found that the tool gives far more neutral results than Textblob.</p>
+		<p>In essence, the first line gets submissions in the subreddit of our choosing (in this case, r/iama) and is limited to only the top 10 posts in the hot tab. </p>
+		<p>Next, the title is printed (just for our own sake - this doesn't go into the output file), a variable named statement is passed this title, and the sentiment is calculated using TextBlob and the value is assigned to the sentiment variable</p>
+		<p>It's important to note that TextBlob essentially returns a numbers between -1 and 1. The closer the number is to 1, the higher the positivity value and vice versa with 0 being completely neutral. Further information on TextBlob can be found <a href="http://textblob.readthedocs.io/en/dev/api_reference.html#textblob.blob.TextBlob.sentiment">here</a> </p>
+		<p>Since we were analyzing 10 posts, we felt it would be appropriate to just combine the scores to get an all around average sentiment for that time of the day. That's what you can see with the iamaTally. It's just taking the previous score (they're all set to 0 initially) and adding the new score.</p>
+		<p>Everything after this is fairly straightforward. It writes a new line, the name of the subreddit, and the sentiment score.</p>
+		<p>Here you can see our simplified accompanying results (more in depth results can be found in our paper and full excel file should you wish to view them):</p>
+		<table>
+			<td>
+			<td><img src="Photos/sent1.png" alt="results1"></td>
+			<td><img src="Photos/sent2.png" alt="results2"></td>
+			</td>
+		</table>
+		<p>Surprising even to us, r/funny had the lowest and only negative sentiment score while r/Frugal (who would have guessed) had the highest.</p>
+		<p>After going back and looking individually at the posts and scores they got, it became clear that the problem was that most people on the funny subreddit are fairly sarcastic in their post's titles. Posts like "when the Grim Reaper is on your marketing team" or "One of my favorite scenes from Arrested Development" are given negative scores as they use negative words even though the post itself is comedic.</p>
+		<p>In addition to this, we found that a lot of the posts submitted to r/funny in particular were very short and therefore were given neutral scores. For example, posts such as "Let it snow?" or "wait for it .." are given neutral scores even though the picture associated with it is mostly comedic, lighthearted content.</p>
+		<p>All in all, it was a fun project that taught me a lot about Python and how it works. Before this project, I only had a small amount of experience from a past net-centric computing course. In fact, at the moment Python is my favorite language and I plan on learning much more about it.</p>
+		<hr>
+		<p>If you wish to download the files associated with the project, please use the following links: <a href="SentimentAnalysis.py" download>SentimentAnalysis.py</a>, <a href="Research_Paper_Sentiment_Analysis.docx" download>Research_Paper_Sentiment_Analysis.docx</a>, <a href="RESULTS.xlsx">Results.xlsx</a></p><hr>
+	</div>
+	
+	
+	<a name="WTC">
+	<div class="parallax11 animated slideInDown"><h1 class="centeredtextbig stroke" style="color:white">Wait Time Calculator Using C++</h1></div></a>
+	<div class="projects animated slideInUp">
+	<p>This project sort of sits in between the other projects I have above. It's not my favorite project just because the material itself is a bit dry to be put frank. However, the application me and my partner came up with was a bit unique so I enjoyed working on it.</p>
+	<p>The whole idea behind it is that you have this random seed that you can make up and that seed is used to generate a random exponential variable. This would allow us to then generate random inter arrival times. We would then use these random times to add people to a queue for a roller coaster.</p>
+	<p>The big plan with this was to run the experiment with one cart and with two carts to see the optimal time a second cart should be added to significantly reduce wait time.</p>
+	<p>Now, it's important to know that rides were set up so that a ride could not be rode unless it was completely full (in our case, 36 people). So if there was 35 people, they would have to wait the random inter arrival time in order to allow for more people to come and ride with them.</p>
+	<p>We found that a second cart should probably be added around the time where there was 36 people coming in every 105 second, or about 1 person every 4 seconds.</p>
+	<p>For the end result, we had to present our results, methods, etc. in a poster format to our professor which you can see presented below.</p>
+	
+	<img src="Photos/poster.png" alt="poster" style="height:800px;width:1000px">
+	<p>In addition to this, here is how the output looks in the console</p>
+	<img src="Photos/output.png" alt="output">
+	<hr>
+	<p>All in all, this was not my favorite project, but I can see the practical application behind it and I had fun making it with my friend.</p>
+	<p>If you wish to download the files associated with this project, please use the following links: <a href="WaitTimeCalculator.zip">WaitTimeCalculator.zip</a>, <a href="poster.pptx">poster.pptx</a></p>
+	
+	</div>
+	
+	<br>
+	<div style="text-align:center">
+	<!-- bottom links bar -->
+	<hr>
+	<p style="color:#C8C8C8; font-size:14px">2018 Nick Mariasi</p>
+	<a href="https://www.linkedin.com/in/nmariasi"><img src="Photos/linkedin.png" style="height:18px;width:18px"></a>&nbsp;
+	<a href="mailto:mariasin@my.easternct.edu"><img src="Photos/mail.png" style="height:18px;width:18px"></a>&nbsp;
+	<a href="https://www.facebook.com/nick.mariasi"><img src="Photos/facebook.png" style="height:18px;width:18px"></a>
+	</div>
+	<br><br><br><br>
+	
+	
+</body>
+</html>
+
+	<div class = "navbar">
+	<a href="start.html">Home</a>
+	<a href="projects.html" class="active">Projects</a>
+	<a href="resume.html">Resume</a>
+	<a href="contact.html">Contact</a>
+	<a href="about.html">About</a>
+	</div>

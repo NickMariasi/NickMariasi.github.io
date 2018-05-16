@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<!--used for the animations-->
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<!--used for timing the animations-->
+	<link rel="stylesheet" type="text/css" href="resume.css">
+	
+	<title>Resume</title>
+	
+</head>
+
+<body>
+
+	<!-- Start Resume Div -- this adds the border, aligns text to the center, and sets width to 60% to accommodate differing screen sizes -->
+	<div class="resume">
+		<!--timesnewroman sets text to size 26px w/ the timesnewroman font(obviously) -- use of font tag so everything isn't spaced weird -->
+		<!--divide into sections so they can be delayed accordingly-->
+		<h1 class="timesnewroman animated fadeInDown" id="section1"><font size="6">Nick Mariasi</font><br>
+		<a href="https://bit.ly/2Jz19Ka" style="text-decoration: none; color:black">63 Carol Drive, Coventry CT 06238</a><br>
+		<a href="mailto:mariasin@my.easternct.edu" style="text-decoration: none; color:black">mariasin@my.easternct.edu</a> (860) 992-9556<br></h1>
+		<!--mediumtext sets font to 24px and sets text to timesnewroman font family. simulates a size down in font change -->
+		<p class="mediumtext animated fadeInDown" id="section2">Computer Science major at Eastern Connecticut State University with experience in the technical support field looking for a position in which to apply my knowledge of technology in a business environment.</p>
+		<h1 class="timesnewroman animated bounceInUp"id="section3">Selected Projects:</h1>
+		<!--text is aligned left in real resume so I used a div to align it that way-->
+		<div align="left">
+			<ul class="mediumtext">
+				<li id="section4" class="animated fadeInLeft">Constructed a relational database of a small business using mock data in <a href="http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html" style="text-decoration: none; color:black">Oracle SQL Developer</a> to run test queries on to extend my experience in how databases are constructed and develop my SQL skills</li>
+				<li id="section5" class="animated fadeInRight">Developed an Android application that displayed basic programming language concepts and contained test questions for each respective language with Java in <a href="https://developer.android.com/studio/" style="text-decoration: none; color:black">Android Studio</a> to broaden my knowledge of Java and app development</li>
+				<li id="section6" class="animated fadeInLeft">Developed an application using Python and <a href="https://www.reddit.com/dev/api/" style="text-decoration: none; color:black">Reddit’s API</a> that performed sentiment analysis on the top 10 posts in 10 different subreddits to determine trends in sentiment among the most popular posts to expand upon learned python concepts</li>
+			</ul>
+		</div>
+		<h1 class="timesnewroman animated flipInX" id="section7">Professional Experience:</h1>
+			<!--use of a table to get the dates spaced correctly. set table to 100% so this spacing is correct-->
+			<table width="100%">
+				<tr>
+					<!--use seperate div's to align the text left or right, hide links to make it looks clean-->
+					<th id="section8" class="animated fadeInLeft"><div align=left><h1 class="timesnewroman"><a href="https://www.cigna.com/careers/early-career-hiring/leadership-development/tecdp/" style="text-decoration: none; color:black">Cigna, Bloomfield,CT<br>Technology Early Career Development Program Internship</a></h1></div></th>
+					<th id="section8" class="animated fadeInRight"><div align=right><h1 class="timesnewroman">August - October 2017</h1></div></th>
+				</tr>
+			</table>
+			
+	<div align="left">
+		<!--indent class uses padding to simulate a tab that also moves over the dot-->
+		<ul class="indent">
+			<li id="section9" class="animated bounceInDown">Utilized <a href="https://apex.oracle.com/en/" style="text-decoration: none; color:black">Oracle Application Express (APEX)</a> to create and modify pages within applications</li>
+			<li id="section10" class="animated bounceInUp">Assisted in locating specific packages or procedures used in the <a href="https://apex.oracle.com/en/" style="text-decoration: none; color:black">APEX</a> applications</li>
+		</ul>
+		<table width="100%">
+				<tr>
+					<th id="section11" class="animated fadeInLeft"><div align=left><h1 class="timesnewroman"><a href="http://www.easternct.edu/helpdesk/" style="text-decoration: none; color:black">ITS Help Desk, Willimantic, CT</a></h1></div></th>
+					<th id="section11" class="animated fadeInRight"><div align=right><h1 class="timesnewroman">September 2014 - Present</h1></div></th>
+				</tr>
+			</table>
+			
+		<ul class="indent">
+			<li id="section12" class="animated fadeInLeft">Submit work order tickets in <a href="https://www.trackit.com/" style="text-decoration: none; color:black">Track-it!</a> system to arrange for specialized help when needed</li>
+			<li id="section13" class="animated fadeInRight">Attempt to resolve routine problems over the phone including but not limited to: password changes, program installations, computer troubleshooting, etc. </li>
+			<li id="section14" class="animated fadeInLeft">Provide on-site assistance to staff, faculty, and students who come to the ITS office</li>
+		</ul>
+	</div>	
+	<h1 class="timesnewroman animated rotateInUpLeft" id="section15">Technical Experience:</h1>
+	<div align="left">
+	<p class="mediumtext animated fadeInUp" id="section16">Programming Languages: C/C++, Java, Python, HTML, and SQL<br>Platforms: Windows XP/7/8/10, MacOS, and Ubuntu</p>
+	</div>
+	<h1 class="timesnewroman animated bounceIn" id="section17">Education:</h1>
+	<div align="left">
+	<p class="mediumtext animated fadeInLeft" id="section18"><b><a href="http://www.easternct.edu/computerscience/" style="text-decoration: none; color:black">B.A., Computer Science, Eastern Connecticut State University, Willimantic, CT<br>Graduation Date: May 2018</b></a></p>
+	<p class="mediumtext indent animated fadeInLeft" id="section19"><b><a href="http://www.easternct.edu/business/business-information-minor/" style="text-decoration: none; color:black"> Minor: Business Information Systems</a></b></p>
+	</div>
+	</div>
+
+	
+
+	<!-- add a download button for those that wish to keep an off line copy-->
+	<br><br><br><p class="para">This resume was recreated using HTML5. If you wish to download the .docx file, please click <a href="Resume.docx" download>this</a> link</p>
+	<br>
+	<div style="text-align:center">
+	<a href="https://www.cigna.com/careers/early-career-hiring/leadership-development/tecdp/">TECDP</a> /
+	<a href="https://apex.oracle.com/en/">Apex</a> /
+	<a href="http://www.easternct.edu/helpdesk/">HelpDesk</a> /
+	<a href="https://www.trackit.com/">Track-it!</a> /
+	<a href="http://www.easternct.edu/computerscience/">CS</a> /
+	<a href="http://www.easternct.edu/business/business-information-minor/">BIS</a> /
+	<a href="http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html">SQL Developer</a> /
+	<a href="https://developer.android.com/studio/">Android Studio</a> /
+	<a href="https://www.reddit.com/dev/api/">Reddit's API</a>
+	</div>
+	
+	<br>
+	<div style="text-align:center">
+	<!-- bottom links bar -->
+	<hr>
+	<p style="color:#C8C8C8; font-size:14px">2018 Nick Mariasi</p>
+	<a href="https://www.linkedin.com/in/nmariasi"><img src="Photos/linkedin.png" style="height:18px;width:18px"></a>&nbsp;
+	<a href="mailto:mariasin@my.easternct.edu"><img src="Photos/mail.png" style="height:18px;width:18px"></a>&nbsp;
+	<a href="https://www.facebook.com/nick.mariasi"><img src="Photos/facebook.png" style="height:18px;width:18px"></a>
+	</div>
+	<br><br><br>
+	<div class = "navbar">
+	<a href="start.html">Home</a>
+	<a href="projects.html">Projects</a>
+	<a href="resume.html" class="active">Resume</a>
+	<a href="contact.html">Contact</a>
+	<a href="about.html">About</a>
+	</div>
+	
+</body>
+</html>

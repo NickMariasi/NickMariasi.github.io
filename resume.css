@@ -1,0 +1,115 @@
+/* This CSS file is in place to time the animations from the animate CSS file */
+
+/*Header*/
+#section1{
+	animation-duration:1s;
+	animation-delay:500ms;
+}
+
+/*Underneath Header*/
+#section2{
+	animation-duration:1s;
+	animation-delay:1000ms;
+}
+
+/*Selected Projects*/
+#section3{
+	animation-duration:2s;
+	animation-delay:2000ms;
+}
+
+/*List item 1*/
+#section4{
+	animation-duration:2000ms;
+	animation-delay:2000ms;
+}
+
+/*List item 2*/
+#section5{
+	animation-duration:2000ms;
+	animation-delay:2200ms;
+}
+
+/*List item 3*/
+#section6{
+	animation-duration:2000ms;
+	animation-delay:2400ms;
+}
+
+/*Professional Experience*/
+#section7{
+	animation-duration:1000ms;
+	animation-delay:3600ms;
+}
+
+/*Cigna*/
+#section8{
+	animation-duration:1s;
+	animation-delay:3800ms;
+}
+
+/*oracle list 1*/
+#section9{
+	animation-duration:2s;
+	animation-delay:4000ms;
+}
+
+/*oracle list 2*/
+#section10{
+	animation-duration:2s;
+	animation-delay:4200ms;
+}
+/*ITS Help Desk*/
+#section11{
+	animation-duration:1s;
+	animation-delay:5000ms;
+}
+/*Help Desk List 1*/
+#section12{
+	animation-duration:1500ms;
+	animation-delay:5200ms;
+}
+
+/*Help Desk List 2*/
+#section13{
+	animation-duration:1500ms;
+	animation-delay:5400ms;
+}
+
+/*Help Desk List 3*/
+#section14{
+	animation-duration:1500ms;
+	animation-delay:5600ms;
+}
+
+/*Technical Experience*/
+#section15{
+	animation-duration:1s;
+	animation-delay:6000ms;
+}
+
+/*Technical Experience List*/
+#section16{
+	animation-duration:1s;
+	animation-delay:6400ms;
+}
+
+/*Education*/
+#section17{
+	animation-duration:1s;
+	animation-delay:7000ms;
+}
+
+/*Major*/
+#section18{
+	animation-duration:1s;
+	animation-delay:7500ms;
+}
+
+/*Minor*/
+#section19{
+	animation-duration:1s;
+	animation-delay:7700ms;
+}
+
+
