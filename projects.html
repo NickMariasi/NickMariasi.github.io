@@ -4,10 +4,15 @@
 	
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+	<!--for the navigation bar font-->
+	<link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
 	<meta charset="utf-8" />
 
 	<title>Projects</title>
 
+	<style>#lot{animation-delay:2000ms;}#ECSU{animation-delay:4s;}#few{animation-delay:6s;}</style>
+	
 </head>
 
 <body>
@@ -17,8 +22,8 @@
 	
 	<div class="parallax8 animated fadeInUp"><h1 class="centeredtextbig stroke" style="color:white">Projects</h1></div>
 	<div class="projects">
-		<h1 class="header">I've had a lot of projects over the years at ECSU</h1>
-		<h2 class="mediumtext" style="color:#808080">Here you'll find just a few that stuck with me</h2><hr>
+		<h1 class="header animated fadeInUp">I've had a <a class="animated bounce" style="display: inline-block" id="lot">lot</a> of projects over the years at <a class="animated swing" style="display: inline-block" id="ECSU">ECSU</a></h1>
+		<h2 class="mediumtext animated fadeInDown" style="color:#808080">Here you'll find just a <a class="animated pulse" style="display: inline-block" id="few">few</a> that stuck with me</h2><hr>
 	</div>
 	<a name="Android">
 	<div class="parallax9 animated fadeInDown"><h1 class="centeredtextbig stroke" style="color:white">My Own Android Application</a></h1></div>
@@ -26,9 +31,9 @@
 		<p>This was one of the more challenging projects I had to complete near the end of my college career. The reasoning for which is that when I first attended Eastern, the first programming course you used to take was a C++ course. It just so happens that a couple semesters after I complete that class - the curriculum changed so that the first programming course you take is now java. That being said, I only had one other class before this one that taught strictly Java, so I struggled throughout the course.</p>
 		<p>The project itself seemingly wasn't too bad - create an application with a list of features the professor had laid out. That was it, the app could be almost anything you wanted as long as it contained those features. So for my project, I decided I wanted to create a simple application that switches between views by using fragments and buttons to show simple programming concepts like loops and output/input in 3 different programming languages.</p>
 		<h4>Here's an image of the application in an emulator<br>You may click on the image to be brought to a small interactive demonstration I put together for it</h4>
-		<a href="android/Homepage.html">
+		<a href="android/indexpage.html">
 		<div class="animated rollIn">
-		<img src="android/home.png" alt="homescreen"> </a>
+		<img src="android/index.png" alt="indexscreen"> </a>
 		</div>
 		
 		<p>For this project, I also had to use custom sounds for each of the button clicks as audio was a feature that was required to be implemented. The sounds are as follows:</p>
@@ -45,7 +50,7 @@
 			<source src="sounds/stone_button.mp3" type="audio/mpeg">
 		</audio>
 		<p>While this project certainly was very challenging for me, I feel I've learned a lot throughout the process of doing it and am glad I did it in the end.</p><hr>
-		<p>if you wish to download the source files, please click <a href="Statement-of-Features.docx" download>this</a> link for the statement of features, <a href="codeTutorial.zip" download>this</a> link for the Zipped Android Studio Project file, and <a href="app-debug.apk" download>this</a> link for the APK.</p><hr>
+		<p>if you wish to download the source files, please click <a href="Files/Statement-of-Features.docx" download>this</a> link for the statement of features, <a href="Files/codeTutorial.zip" download>this</a> link for the Zipped Android Studio Project file, and <a href="Files/app-debug.apk" download>this</a> link for the APK.</p><hr>
 	</div>
 	
 	<a name="Sentiment">
@@ -91,7 +96,7 @@
 		<p>In addition to this, we found that a lot of the posts submitted to r/funny in particular were very short and therefore were given neutral scores. For example, posts such as "Let it snow?" or "wait for it .." are given neutral scores even though the picture associated with it is mostly comedic, lighthearted content.</p>
 		<p>All in all, it was a fun project that taught me a lot about Python and how it works. Before this project, I only had a small amount of experience from a past net-centric computing course. In fact, at the moment Python is my favorite language and I plan on learning much more about it.</p>
 		<hr>
-		<p>If you wish to download the files associated with the project, please use the following links: <a href="SentimentAnalysis.py" download>SentimentAnalysis.py</a>, <a href="Research_Paper_Sentiment_Analysis.docx" download>Research_Paper_Sentiment_Analysis.docx</a>, <a href="RESULTS.xlsx">Results.xlsx</a></p><hr>
+		<p>If you wish to download the files associated with the project, please use the following links: <a href="Files/SentimentAnalysis.py" download>SentimentAnalysis.py</a>, <a href="Files/Research_Paper_Sentiment_Analysis.docx" download>Research_Paper_Sentiment_Analysis.docx</a>, <a href="Files/RESULTS.xlsx">Results.xlsx</a></p><hr>
 	</div>
 	
 	
@@ -110,7 +115,7 @@
 	<img src="Photos/output.png" alt="output">
 	<hr>
 	<p>All in all, this was not my favorite project, but I can see the practical application behind it and I had fun making it with my friend.</p>
-	<p>If you wish to download the files associated with this project, please use the following links: <a href="WaitTimeCalculator.zip">WaitTimeCalculator.zip</a>, <a href="poster.pptx">poster.pptx</a></p>
+	<p>If you wish to download the files associated with this project, please use the following links: <a href="Files/WaitTimeCalculator.zip">WaitTimeCalculator.zip</a>, <a href="Files/poster.pptx">poster.pptx</a></p>
 	
 	</div>
 	
@@ -129,10 +134,21 @@
 </body>
 </html>
 
-	<div class = "navbar">
-	<a href="start.html">Home</a>
-	<a href="projects.html" class="active">Projects</a>
-	<a href="resume.html">Resume</a>
-	<a href="contact.html">Contact</a>
-	<a href="about.html">About</a>
-	</div>
+	<div class="navbar animated flipInX">
+
+	<ul class="ulnav">
+		<li class="linav"><a href="index.html">nickmariasi.com</a></li>
+		<li class="linav"><a class="animated disabled" id="space1">|</a></li>
+		<li class="linav"><a href="index.html">index</a></li>
+		<li class="linav"><a class="disabled" id="space2">|</a></li>
+		<li class="linav"><a href="projects.html" class="active">Projects</a></li>
+		<li class="linav"><a class="disabled" id="space3">|</a></li>
+		<li class="linav"><a href="resume.html">Resume</a></li>
+		<li class="linav"><a class="disabled" id="space4">|</a></li>
+		<li class="linav"><a href="contact.html">Contact</a></li>
+		<li class="linav"><a class="disabled" id="space5">|</a></li>
+		<li class="linav"><a href="about.html">About</a></li>
+
+	</ul>
+
+</div>

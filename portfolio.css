@@ -1,5 +1,6 @@
 body {
 	font-family: Garamond;
+	background-color: rgba(242, 240, 230, 0.5)
 }
 
 .para {
@@ -69,14 +70,12 @@ body {
 	font-family: "Times New Roman";
 	font-size:26px;
 	text-align: right;
-	
 }
 
 .left{
 	float:left;
 	font-family: "Times New Roman";
 	font-size:26px;
-	
 }
 
 .timesnewroman{
@@ -98,12 +97,15 @@ body {
 }
 
 /* Place the navbar at the bottom of the page, and make it stick */
+/* background gives it a gradient effect from light grey to completely transparent */
 .navbar {
-    background-color: #FFFFFF;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(242, 240, 230,0));
     overflow: hidden;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    top: 0;
+    width: 99.5%;
+	font-family: 'Share Tech Mono';
+	
 }
 
 .centertable {
@@ -132,23 +134,23 @@ body {
 .navbar a {
     float: left;
     display: block;
-    color: #000000;
+    color: rgba(144, 238, 144);
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 35px;
     text-decoration: none;
     font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .navbar a:hover {
-    background-color: #ddd;
+    background: linear-gradient(rgba(179, 255, 203, 1), rgba(242, 240, 230,0));
     color: black;
 }
 
 /* Add a color to the active/current link */
 .navbar a.active {
-    background-color: #4CAF50;
-    color: white;
+    background: linear-gradient(rgba(102, 255, 153, 1), rgba(242, 240, 230,0)); 
+    color: black;
 }
 
 
@@ -586,4 +588,34 @@ checkbox {
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}
+
+.ulnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.linav {
+    float: left;
+}
+
+
+.hero-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -9999;
+}
+
+
+video {
+  width: 100%;
+  max-width: 100%;
+
 }

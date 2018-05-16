@@ -7,6 +7,10 @@
 	<!--used for the initial animation-->
 	<link rel="stylesheet" type="text/css" href="animate.css">
 	<meta charset="utf-8" />
+	<!--for the navigation bar animations-->
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+	<!--for the navigation bar font-->
+	<link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
 
 	<title>About</title>
 	<!--animation seemed too fast for the other two-->
@@ -28,7 +32,14 @@
 
 <body>
 
-		<div class="parallax5 animated fadeInDown" id="top"><h2 class="centeredtextbig">Computer Science<br>How I started and where I'm going</h2></div>
+		<div class="animated fadeInDown" style="width:100%" id="top"><h2 class="centeredtextbig" style="color:white">Computer Science<br>How I started and where I'm going</h2>
+			<video autoplay loop muted>
+				<source src="Photos/code.mp4" type="video/mp4">
+				Unfortunately, your browser does not support the video tag.
+			</video>
+		</div>
+
+		
 		<div class="aboutleft">
 		<hr>
 		<div class="animated zoomIn" id="opening">
@@ -59,7 +70,7 @@
 		<p>As I gain experience and my resume expands, I'll continually update the site with new information.</p>
 		<p>In addition to this, if you have any suggestions for the site or want to get in contact with me, please use the <a href="contact.html">contact</a> page to get in touch. </p>
 		</div>
-
+		
 		
 	<br><br>
 	<div style="text-align:center">
@@ -71,12 +82,24 @@
 	<a href="https://www.facebook.com/nick.mariasi"><img src="Photos/facebook.png" style="height:18px;width:18px"></a>
 	</div>
 	<br><br><br><br>
-	<div class = "navbar">
-	<a href="start.html">Home</a>
-	<a href="projects.html">Projects</a>
-	<a href="resume.html">Resume</a>
-	<a href="contact.html">Contact</a>
-	<a href="about.html" class="active">About</a>
-	</div>
+	
+	<div class="navbar animated flipInX">
+
+	<ul class="ulnav">
+		<li class="linav"><a href="index.html">nickmariasi.com</a></li>
+		<li class="linav"><a class="animated disabled" id="space1">|</a></li>
+		<li class="linav"><a href="index.html">index</a></li>
+		<li class="linav"><a class="disabled" id="space2">|</a></li>
+		<li class="linav"><a href="projects.html">Projects</a></li>
+		<li class="linav"><a class="disabled" id="space3">|</a></li>
+		<li class="linav"><a href="resume.html">Resume</a></li>
+		<li class="linav"><a class="disabled" id="space4">|</a></li>
+		<li class="linav"><a href="contact.html">Contact</a></li>
+		<li class="linav"><a class="disabled" id="space5">|</a></li>
+		<li class="linav"><a href="about.html" class="active">About</a></li>
+
+	</ul>
+
+</div>
 </body>
 </html>

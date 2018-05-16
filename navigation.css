@@ -1,0 +1,62 @@
+#main{
+	animation-duration:5s;
+}
+
+#mainnav{
+	animation-delay:3s;
+}
+
+#navbar{
+	animation-delay:5000ms;
+	animation-duration:2s;
+}
+
+#navbar2{
+	animation-delay:3000ms;
+}
+
+#navbar3{
+	animation-delay:3200ms;
+}
+
+#navbar4{
+	animation-delay:3400ms;
+}
+
+#navbar5{
+	animation-delay:3600ms;
+}
+
+#navbar6{
+	animation-delay:3700ms;
+}
+
+#logo{
+	animation-delay:2800ms;
+}
+
+#space1{
+	animation-delay:3200ms;
+}
+
+#space2{
+	animation-delay:3400ms;
+}
+
+#space3{
+	animation-delay:3600ms;
+}
+
+#space4{
+	animation-delay:3800ms;
+}
+
+#space5{
+	animation-delay:4000ms;
+}
+
+/* used for spacing's, disables the hover over feature */
+.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
