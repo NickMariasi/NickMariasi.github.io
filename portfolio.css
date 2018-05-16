@@ -169,7 +169,7 @@ body {
 }
 .parallax2 {
     /* The image used */
-    background-image: url("Photos/srcode.png");
+    background-image: url("Photos/srcode.PNG");
 	
 	
     /* Set a specific height */
@@ -186,7 +186,7 @@ body {
 }
 .parallax3 {
     /* The image used */
-    background-image: url("Photos/wtc.png");
+    background-image: url("Photos/wtc.PNG");
 	
     /* Set a specific height */
     min-height: 800px; 
@@ -203,7 +203,7 @@ body {
 
 .parallax4 {
     /* The image used */
-    background-image: url("Photos/androidstudioproject.png");
+    background-image: url("Photos/androidstudioproject.PNG");
 	
 
     /* Set a specific height */
@@ -328,7 +328,7 @@ body {
 
 .parallax9 {
     /* The image used */
-    background-image: url("Photos/androidstudioproject.png");
+    background-image: url("Photos/androidstudioproject.PNG");
 	
 
     /* Set a specific height */
@@ -369,7 +369,7 @@ body {
 
 .parallax10 {
     /* The image used */
-    background-image: url("Photos/srcode.png");
+    background-image: url("Photos/srcode.PNG");
 	
 
     /* Set a specific height */
@@ -387,7 +387,7 @@ body {
 
 .parallax11 {
     /* The image used */
-    background-image: url("Photos/wtc.png");
+    background-image: url("Photos/wtc.PNG");
 	
 
     /* Set a specific height */
