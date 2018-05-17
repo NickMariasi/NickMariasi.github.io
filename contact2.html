@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<!--used for the animations-->
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<!--for the navigation bar animations-->
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+	<!--for the navigation bar font-->
+	<link href='https://fonts.googleapis.com/css?family=Share Tech Mono' rel='stylesheet'>
+	<meta charset="utf-8" />
+	
+	<title>Contact</title>
+	
+	<!--Set delays to make the animations look cool-->
+	<style>
+
+		#buttons{
+		animation-delay:1000ms;
+		animation-duration:1.3s;
+		}
+		#topright{
+		animation-delay:200ms;
+		animation-duration:1.3s;
+		}
+		#middleleft{
+		animation-delay:400ms;
+		animation-duration:1.3s;
+		}
+		#middleright{
+		animation-delay:600ms;
+		animation-duration:1.3s;
+		}
+		#comments{
+		animation-delay:800ms;
+		animation-duration:1.3s;
+		}
+		#personal{
+		animation-delay:0ms;
+		animation-duration:1.3s;
+		}
+		#thanks{
+		animation-delay:3000ms;
+		}
+		#thanks2{
+		animation-delay:4000ms;
+		}
+		#thanks3{
+		animation-delay:5000ms;
+		}
+		#soon{
+		animation-delay:4500ms;
+		animation-duration:1s;
+		}
+		#thankyou{
+		animation-delay:4000ms;
+		}
+		#end{
+		animation-delay:20s;
+		}
+		#end2{
+		animation-delay:21s;
+		}
+		#end3{
+		animation-delay:22s;
+		}
+		#end4{
+		animation-delay:60s;
+		}
+		#end5{
+		animation-delay:90s;
+		}
+		#end6{
+		animation-delay:150s;
+		}
+		#end7{
+		animation-delay:200s;
+		}
+		#end8{
+		animation-delay:250s;
+		}
+		#win{
+		animation-iteration-count:20;
+		color:red;
+		}
+
+	
+	</style>
+	
+</head>
+
+<body>
+
+
+
+<div style="text-align:center">
+<br><br><br>
+
+		<h1 style="text-align:center" class="animated bounceInDown" id="thanks"><a class="animated flash" style="display: inline-block" id="thankyou">Thank You</a> for your message!</h1>
+		<h1 style="text-align:center" class="animated fadeInUp" id="thanks2">I'll get back to you as <a class="animated bounce" style="display: inline-block" id="soon">soon</a> as I get your message.</h1>
+		</a></h2>
+
+</div>
+
+<form action="mailto:mariasin@my.easternct.edu">
+	<table class="centertable">
+		<tr>
+			<td>
+				<div class="animated flipOutX" id="personal">
+					<fieldset class="pi">
+						<!--START:Personal Information section-->
+						<legend>Personal Information:</legend>
+						<br>
+						<input type="text" name="firstname" placeholder="First Name" required>
+						<br><br>
+						<input type="text" name="lastname" placeholder="Last Name" required>
+						<br><br>
+						<input type="email" name="E-Mail" placeholder="E-Mail Address" size="30" required>
+						<br><br>
+						<input type="tel" name="tele" placeholder="Phone Number" size="12">
+						<br><br>
+		
+					</fieldset>
+				</div>
+			</td>
+			<td>
+				<div class="animated flipOutY" id="topright">
+					<fieldset class="rb">
+					<!--START: Who are you? section-->
+					<legend>Check All that Apply:</legend>
+					<br>
+					<label class="container">Visitor
+					<input type="checkbox" name="option1" value="Visitor" checked>
+					<span class="checkmark"></span>
+					</label>
+					<label class="container">Friend
+					<input type="checkbox" name="option2" value="Friend">
+					<span class="checkmark"></span>
+					</label>
+					<label class="container">Recruiter
+					<input type="checkbox" name="option3" value="Recruiter">
+					<span class="checkmark"></span>
+					</label>
+					<label class="container">Coworker
+					<input type="checkbox" name="option4" value="coworker">
+					<span class="checkmark"></span>
+					</label>
+					<label class="container">Other
+					<input type="checkbox" name="option5">
+					<span class="checkmark"></span>
+					</label>
+					<input type="text" name="option6" placeholder="If other, please specify...">
+					<br><br>
+			
+					</fieldset>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="animated flipOutY" id="middleleft">
+					<fieldset class="hb">
+						<!--START: How did you hear about this site section-->
+						<legend>How did you hear about this website:</legend>
+						
+						<select name="hearabout">
+							<option value="default">Select one</option>
+							<option value="Word of Mouth">Word of Mouth</option>
+							<option value="Online">Online Forums</option>
+							<option value="Linkedin">LinkedIn</option>
+							<option value="Facebook">Facebook</option>
+							<option value="other">Other</option>
+						</select>
+						<br><br>
+						<input type="text" name="hearaboutother" placeholder="If other, please specify...">
+					<br>
+					</fieldset>
+				</div>
+			</td>
+			<td>
+				<div class="animated flipOutX" id="middleright">
+					<fieldset class="exp">
+					<!--START: Experience section-->
+					<legend>How was your experience:</legend>
+						<label class="container2">Positive
+						<input type="radio" name="exp" value="positive" checked>
+						<span class="checkmark2"></span>
+						</label>
+						<label class="container2">Neutral
+						<input type="radio" name="exp" value="neutral">Neutral<br>
+						<span class="checkmark2"></span>
+						</label>
+						<label class="container2">Negative
+						<input type="radio" name="exp" value="negative">
+						<span class="checkmark2"></span>
+						</label>
+				
+					</fieldset>
+				</div>
+			</td>
+	
+		</tr>
+	</table>
+			<div class="animated flipOutX" id="comments">
+				<fieldset class="ta" align="center">
+				<!--START: Questions section-->
+				<legend>Comments, Questions, etc:</legend>
+					<textarea name="message" rows="20" cols="85" placeholder="Any Suggestions/Comments/Questions would be appreciated!"></textarea>
+					
+				</fieldset>
+			</div>
+	<div class="animated flipOutY" id="buttons">
+	<table class="centertable">
+	<!--START: Buttons-->
+			<tr>
+				<td>
+					<input type="submit" class="button button2">
+				</td>
+				<td>
+					<input type="reset" class="button button2">
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</form>
+
+
+
+<br><br><br><br><br><br><br><br>
+<div style="text-align:center">
+<h1 style="text-align:center" class="animated fadeInUp" id="end">Stuck?</h1>
+<h2 style="text-align:center" class="animated fadeInUp" id="end2">Please use the above navigation bar or the following links to navigate to different pages</h2>
+<h3 style="text-align:center" class="animated fadeInUp" id="end3"><a href="http://nickmariasi.com/">Home</a> / <a href="http://nickmariasi.com/projects.html">Projects</a> / <a href="http://nickmariasi.com/resume.html">Resume</a> / <a href="http://nickmariasi.com/about.html">About</a></h3>
+<h1 style="text-align:center" class="animated fadeInUp" id="end4">Still here?</h1>
+<h1 style="text-align:center" class="animated fadeInUp" id="end5">There's nothing left here</h1>
+<h1 style="text-align:center" class="animated fadeInUp" id="end6">Nothing else is going to pop up now</h1>
+<h1 style="text-align:center" class="animated fadeInUp" id="end7">What, do you think I'm lying?</h1>
+<h1 style="text-align:center" class="animated fadeInUp" id="end8">Alright you <a class="animated flash" style="display:inline-block" id="win">WIN!!!!!!!!!</a></h1>
+	<!-- bottom links bar -->
+	<div class="animated fadeOutDown">
+	<hr>
+	<p style="color:#C8C8C8; font-size:14px">2018 Nick Mariasi</p>
+	<a href="https://www.linkedin.com/in/nmariasi"><img src="Photos/linkedin.png" style="height:18px;width:18px"></a>&nbsp;
+	<a href="mailto:mariasin@my.easternct.edu"><img src="Photos/mail.png" style="height:18px;width:18px"></a>&nbsp;
+	<a href="https://www.facebook.com/nick.mariasi"><img src="Photos/facebook.png" style="height:18px;width:18px"></a>
+	</div>
+	</div>
+	<br><br><br>
+	
+	<div class="navbar">
+
+	<ul class="ulnav">
+		<li class="linav"><a href="home.html">nickmariasi.com</a></li>
+		<li class="linav"><a class="animated disabled" id="space1">|</a></li>
+		<li class="linav"><a href="home.html">Home</a></li>
+		<li class="linav"><a class="disabled" id="space2">|</a></li>
+		<li class="linav"><a href="projects.html">Projects</a></li>
+		<li class="linav"><a class="disabled" id="space3">|</a></li>
+		<li class="linav"><a href="resume.html">Resume</a></li>
+		<li class="linav"><a class="disabled" id="space4">|</a></li>
+		<li class="linav"><a href="contact.html" class="active">Contact</a></li>
+		<li class="linav"><a class="disabled" id="space5">|</a></li>
+		<li class="linav"><a href="about.html">About</a></li>
+
+	</ul>
+
+</div>
+</body>
+</html>
+
