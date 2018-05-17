@@ -79,7 +79,7 @@
 		<p>One thing to note is that we left out some subreddits that we knew were going to be neutral and/or were not imporant to know the sentiment of. This includes subreddits such as Announcements and some NSFW ones.</p>
 		
 			<p>The code is very repetitive so I'll include this snippet and explain how the program works</p>
-			<img src="Photos/sentimentcode.png" alt="Sentiment Analysis Code Snippet">
+			<img src="Photos/sentimentcode.PNG" alt="Sentiment Analysis Code Snippet">
 		<p>I've left out the Vader Sentiment Analysis code as we've ignored these values for the final results as we (and some other classmates) found that the tool gives far more neutral results than Textblob.</p>
 		<p>In essence, the first line gets submissions in the subreddit of our choosing (in this case, r/iama) and is limited to only the top 10 posts in the hot tab. </p>
 		<p>Next, the title is printed (just for our own sake - this doesn't go into the output file), a variable named statement is passed this title, and the sentiment is calculated using TextBlob and the value is assigned to the sentiment variable</p>
